@@ -1,0 +1,42 @@
+{
+  "project_id": "demo-lanterns-harbor-street",
+  "title": "Lanterns Over Harbor Street",
+  "created_at": "2026-01-01T18:30:00Z",
+  "mock_mode": true,
+  "settings": {
+    "image_provider": "mock",
+    "tts_provider": "mock",
+    "device": "auto",
+    "chunk_target_chars": 900,
+    "chunk_max_chars": 1400,
+    "resolution": "1280x720",
+    "fps": 24
+  },
+  "script_path": "examples/demo_script.txt",
+  "scenes": [
+    {
+      "scene_id": "scene-001",
+      "start_sec": 0.0,
+      "duration_sec": 9.5,
+      "narration_text": "At dusk, Mina unlocks her grandfather's tiny repair shop while wind rattles the harbor signs.",
+      "image_prompt": "cinematic dusk street, warm shop window glow, coastal town, gentle wind, storybook realism",
+      "status": "queued"
+    },
+    {
+      "scene_id": "scene-002",
+      "start_sec": 9.5,
+      "duration_sec": 10.0,
+      "narration_text": "Inside is a list of five old customers and one handwritten note.",
+      "image_prompt": "close-up envelope and handwritten list on wooden counter, moody evening light",
+      "status": "queued"
+    }
+  ],
+  "exports": {
+    "video_mp4": "data/exports/demo-lanterns-harbor-street/final.mp4",
+    "subtitles_srt": "data/exports/demo-lanterns-harbor-street/subtitles.srt",
+    "narration_wav": "data/exports/demo-lanterns-harbor-street/narration.wav",
+    "project_json": "data/projects/demo-lanterns-harbor-street.json",
+    "prompts_txt": "data/exports/demo-lanterns-harbor-street/prompts.txt",
+    "prompts_json": "data/exports/demo-lanterns-harbor-street/prompts.json"
+  }
+}
